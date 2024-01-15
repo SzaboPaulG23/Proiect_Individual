@@ -1,0 +1,38 @@
+﻿@model CatalogOnline2.Models.NewUser
+
+@{
+    Layout = "~/Views/Users/_Layout_Users.cshtml";
+    ViewData["Title"] = "Generate";
+}
+
+<h1>Generate</h1>
+
+<h4>Upload an excel file below to add users</h4>
+<hr />
+
+
+<div>
+    <form method="post" enctype="multipart/form-data" asp-action="FileUpload">
+        <div class="form-group">
+            <div class="col-md-10">
+                <label class="btn btn-secondary">
+                 Choose file    <input type="file" name="files" style="display: none;">
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="submit" value="Upload" class="btn btn-primary" onclick="if (confirm('Are you sure?')) {return true;} else {return false;}" />
+            </div>
+        </div>
+    </form>
+</div>
+<div>
+    <a asp-action="GenerateAccountExcel" class="button">Generate</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

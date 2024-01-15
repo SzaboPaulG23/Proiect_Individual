@@ -1,0 +1,23 @@
+﻿@model CatalogOnline2.Models.User
+
+@{
+    Layout = "~/Views/Home/_Layout_Login.cshtml";
+    ViewData["Title"] = "Home Page";
+    @using (Html.BeginForm("Login", "Home"))
+    }
+            <h1 class="display-4">Welcome</h1>
+            <form method="POST">
+                <label for="username">Username:</label><br />
+                <input type="text" id="username" name="username" /> <br />
+                <label for="password">Password:</label><br />
+                <input type="password" id="password" name="password" /><br /><br />
+        <input type="submit" value="Login" asp-action="Login" class="btn" />
+            </form>
+        @if (ViewBag.Message != null)
+    {
+        <script type="text/javascript">
+            window.onload = function () {
+                alert("@ViewBag.Message");
+            };
+        </script>
+    }

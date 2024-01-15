@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogOnline2", "CatalogOnline2\CatalogOnline2.csproj", "{57E77A2D-0B28-47E7-9BD2-653A74D45FE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalLibraries", "ExternalLibraries", "{9050943A-B824-429E-9632-9B47F30E67CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57E77A2D-0B28-47E7-9BD2-653A74D45FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57E77A2D-0B28-47E7-9BD2-653A74D45FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57E77A2D-0B28-47E7-9BD2-653A74D45FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57E77A2D-0B28-47E7-9BD2-653A74D45FE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ADD7F58A-EC85-492E-B280-23E36797A3DB}
+	EndGlobalSection
+EndGlobal
